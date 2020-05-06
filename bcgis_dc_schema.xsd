@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML Schema for resources created by the GIS Lab at Baruch College CUNY -->
+<!-- Elements derived from Dublin Core qualified elements and terms -->
+<!-- Frank Donnelly, Geospatial Data Librarian-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="metadata">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="title" type="xs:string"/>
+			<xs:element name="creator" type="xs:string" maxOccurs="unbounded"/>
+			<!-- subject values: ISO 19115 -->			
+			<xs:element name="subject" maxOccurs="21">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="biota"/>
+						<xs:enumeration value="boundaries"/>
+						<xs:enumeration value="climatologyMeteorologyAtmosphere"/>
+						<xs:enumeration value="disaster"/>
+						<xs:enumeration value="economy"/>
+						<xs:enumeration value="elevation"/>
+						<xs:enumeration value="environment"/>
+						<xs:enumeration value="extraTerrestrial"/>						
+						<xs:enumeration value="farming"/>
+						<xs:enumeration value="geoscientificInformation"/>
+						<xs:enumeration value="health"/>						
+						<xs:enumeration value="imageryBaseMapsEarthCover"/>
+						<xs:enumeration value="intelligenceMilitary"/>
+						<xs:enumeration value="inlandWaters"/>					
+						<xs:enumeration value="location"/>
+						<xs:enumeration value="oceans"/>
+						<xs:enumeration value="planningCadastre"/>					
+						<xs:enumeration value="society"/>
+						<xs:enumeration value="structure"/>
+						<xs:enumeration value="transportation"/>					
+						<xs:enumeration value="utilitiesCommunication"/>
+					</xs:restriction>
+				</xs:simpleType>	
+			</xs:element>		
+			<xs:element name="description" type="xs:string"/>
+			<!-- publisher values: LCSH -->			
+			<xs:element name="publisher">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Newman Library (Bernard M. Baruch College)"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="contributor" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- issued values: YYYY-MM -->			
+			<xs:element name="issued">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9][0-9][0-9][0-9]-[0-1][0-9]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<!-- type values: DCMIType -->
+			<xs:element name="type">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Dataset"/>
+						<xs:enumeration value="Image"/>
+						<xs:enumeration value="Interactive Resource"/>
+						<xs:enumeration value="Physical Object"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<!-- format values: geoblacklight and free text -->
+			<xs:element name="format" type="xs:string" maxOccurs="2"/>
+			<!-- type values: geoblacklight geometry type -->
+			<xs:element name="medium">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Point"/>
+						<xs:enumeration value="Line"/>
+						<xs:enumeration value="Polygon"/>
+						<xs:enumeration value="Image"/>
+						<xs:enumeration value="Raster"/>
+						<xs:enumeration value="Mixed"/>
+						<xs:enumeration value="Table"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>			
+			<xs:element name="identifier" type="xs:string" minOccurs="2" maxOccurs="2"/>
+			<xs:element name="source" type="xs:string" maxOccurs="unbounded"/>
+			<!-- language values: geoblacklight -->
+			<xs:element name="language" type="xs:string" maxOccurs="unbounded"/>
+			<xs:element name="isPartOf" type="xs:string" minOccurs="0"/>
+			<!-- coverage values: geonames -->
+			<xs:element name="coverage" type="xs:string" maxOccurs="unbounded"/>
+			<!-- spatial values: dcterms:Box -->
+			<xs:element name="spatial">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<!-- temporal values: YYYY-MM-DD, YYYY-MM, YYYY, YYYY-YYYY -->						
+			<xs:element name="temporal">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">	
+						<xs:pattern value="[0-9][0-9][0-9][0-9]-[0-1][0-9]-[0-3][0-9]|[0-9][0-9][0-9][0-9]-[0-1][0-9]|[0-9][0-9][0-9][0-9]|[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<!-- rights values: geoblacklight -->
+			<xs:element name="rights">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Public"/>
+						<xs:enumeration value="Restricted"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="license" type="xs:string" minOccurs="2" maxOccurs="2"/>
+			<!-- provenance values: geoblacklight -->
+			<xs:element name="provenance">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Baruch CUNY"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<!-- accrualperiodicity values: dcterms:Frequency -->
+			<xs:element name="accrualperiodicity">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Biennial"/>
+						<xs:enumeration value="Annual"/>
+						<xs:enumeration value="Semiannual"/>
+						<xs:enumeration value="Quarterly"/>
+						<xs:enumeration value="Irregular"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>

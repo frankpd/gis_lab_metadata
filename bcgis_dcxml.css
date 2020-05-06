@@ -1,0 +1,149 @@
+/*Stylesheet for Baruch College GIS Lab DC XML metadata records*/
+/*Frank Donnelly, Geospatial Data Librarian*/
+
+@namespace xsi url(http://www.w3.org/2001/XMLSchema-instance);
+
+metadata:before {
+	display: inline-block;
+	font-weight: bold;
+	content: "Dublin Core Metadata Record";
+	background-color: #085394;
+	color: white;
+	padding: 1em;
+	margin-bottom: 2em;
+	}
+
+metadata:after {
+	display: inline-block;
+	content: "GIS Lab, Newman Library, Baruch College CUNY";
+	background-color: #085394;
+	color: white;
+	padding: .5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	}
+
+metadata {
+	display: block;
+	font-family:Arial;
+	font-weight: normal; 
+	font-size: 12pt; 
+	line-height:1.5em;
+	margin: 1em;
+	padding: 1em;
+	border: 5px solid #085394;
+	background-color: white;
+	}
+
+*{
+	display:block;
+	}
+
+title:before {
+	content: "Title: ";
+	font-weight:bold; 
+}
+
+
+creator:before {
+	content: "Creator: ";
+	font-weight:bold;
+}
+
+subject:first-of-type:before {
+	content: "Subjects (ISO 19115 Topics): \A";
+	white-space: pre;
+	font-weight:bold;
+}
+
+description:before {
+	content: "Description: ";
+	font-weight:bold; 
+}
+
+publisher:before {
+	content: "Publisher: ";
+	font-weight:bold; 
+}
+
+contributor:before {
+	content: "Contributor: ";
+	font-weight:bold; 
+}
+
+issued:before {
+	content: "Date Issued: ";
+	font-weight:bold; 
+}
+
+type:before {
+	content: "Type: ";
+	font-weight:bold; 
+}
+
+format:before {
+	content: "File format: ";
+	font-weight:bold; 
+}
+
+medium:before {
+	content: "Spatial format: ";
+	font-weight:bold; 
+}
+
+identifier:before {
+	content: "Identifier: ";
+	font-weight:bold; 
+}
+
+source:first-of-type:before {
+	content: "Sources: \A";
+	white-space: pre;
+	font-weight:bold;
+}
+
+language:before {
+	content: "Language: ";
+	font-weight:bold; 
+}
+
+isPartOf:before {
+	content: "Is Part of Collection: ";
+	font-weight:bold; 
+}
+
+coverage:first-of-type:before {
+	content: "Geographic coverage: \A";
+	white-space: pre;
+	font-weight:bold;
+}
+
+spatial:before {
+	content: "Spatial coverage (bounding box): ";
+	font-weight:bold; 
+}
+
+temporal:before {
+	content: "Temporal coverage: ";
+	font-weight:bold; 
+}
+
+rights:before {
+	content: "Rights: ";
+	font-weight:bold; 
+}
+
+license:before {
+	content: "License: ";
+	font-weight:bold; 
+}
+
+provenance:before {
+	content: "Institution: ";
+	font-weight:bold; 
+}
+
+accrualperiodicity:before {
+	content: "Update frequency: ";
+	font-weight:bold; 
+}

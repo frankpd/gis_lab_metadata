@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="http://faculty.baruch.cuny.edu/geoportal/metadata/bcgis_dcxml.css"?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="http://faculty.baruch.cuny.edu/geoportal/metadata/bcgis_dc_schema.xsd">
+<title>varies</title>
+<creator>name</creator>
+<subject>ISO 19115 topic</subject>
+<subject>ISO 19115 topic</subject>
+<description>paragraph</publisher>
+<publisher>Newman Library (Bernard M. Baruch College)</publisher>
+<contributor>optional</contributor>
+<issued>YYYY-MM</issued>
+<type>Dataset</type>
+<format>geoblacklight format</format>
+<medium>geoblacklight geometry type</medium>
+<identifier>filename</identifier>
+<identifier>url</identifier>
+<source>dept name, dataset name</source>
+<source>dept name, dataset name</source>
+<language>English</language>
+<isPartOf>optional</isPartOf>
+<coverage>geonames</coverage>
+<coverage>geonames</coverage>
+<spatial>name=;northlimit=;eastlimit=;southlimit=;westlimit=;units;projection=;</spatial>
+<temporal>varies</temporal>
+<rights>Public</rights>
+<license>name</license>
+<license>url</license>
+<provenance>Baruch CUNY</provenance>
+<accrualperiodicity>DC frequency</accrualperiodicity>
+</metadata>
