@@ -32,7 +32,7 @@
 <coverage>Borough of Manhattan, New York, United States</coverage>
 <coverage>Borough of Queens, New York, United States</coverage>
 <coverage>Borough of Staten Island, New York, United States</coverage>
-<spatial>name=New York City; northlimit=272752.873521; eastlimit=1067309.746197; southlimit=120053.504637; westlimit=913090.689878; units=ft; projection=NAD83 / New York Long Island (ftUS);</spatial>
+<spatial>name=New York City, New York, United States; northlimit=272752.873521; eastlimit=1067309.746197; southlimit=120053.504637; westlimit=913090.689878; units=ft; projection=NAD83 / New York Long Island (ftUS);</spatial>
 <temporal>2012</temporal>
 <rights>Public</rights>
 <license>Creative Commons Attribution-NonCommercial-NoDerivatives CC BY-NC-ND</license>
