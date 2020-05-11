@@ -80,7 +80,7 @@ for file in os.listdir(mfolder):
         geonew['solr_year_i']=int(root.find('temporal').text.split('-')[0])
         geonew['dct_temporal_sm'].append(root.find('temporal').text)
         # Convert spatial bounding box to envelope string, reproject CRS to WGS 84
-        crsparts=root.find('spatial').text.strip(';').split(';')
+        crsparts=[part.strip() for part in root.find('spatial').text.strip(';').split(';')]
         envelope=create_bbox(crsparts,reproject,source_epsg)
         geonew['solr_geom']=envelope
         

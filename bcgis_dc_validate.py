@@ -17,7 +17,7 @@ xmlfolder=os.path.join('projects','nyc_real_estate','newfiles')
 
 def spatial_check(my_xml):
     xmldict=my_schema.to_dict(my_xml)
-    slist=xmldict['spatial'].split(';')
+    slist=[item.strip() for item in xmldict['spatial'].split(';')]
     if slist[-1]=='':
         slist.pop()
     sdict={}

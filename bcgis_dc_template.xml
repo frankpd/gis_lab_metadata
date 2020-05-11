@@ -6,7 +6,7 @@ xsi:noNamespaceSchemaLocation="http://faculty.baruch.cuny.edu/geoportal/metadata
 <creator>name</creator>
 <subject>ISO 19115 topic</subject>
 <subject>ISO 19115 topic</subject>
-<description>paragraph</publisher>
+<description>paragraph</description>
 <publisher>Newman Library (Bernard M. Baruch College)</publisher>
 <contributor>optional</contributor>
 <issued>YYYY-MM</issued>
@@ -21,7 +21,7 @@ xsi:noNamespaceSchemaLocation="http://faculty.baruch.cuny.edu/geoportal/metadata
 <isPartOf>optional</isPartOf>
 <coverage>geonames</coverage>
 <coverage>geonames</coverage>
-<spatial>name=;northlimit=;eastlimit=;southlimit=;westlimit=;units;projection=;</spatial>
+<spatial>name=; northlimit=; eastlimit=; southlimit=; westlimit=; units; projection=;</spatial>
 <temporal>varies</temporal>
 <rights>Public</rights>
 <license>name</license>
