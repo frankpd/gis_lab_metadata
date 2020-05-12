@@ -82,12 +82,12 @@ type:before {
 }
 
 format:before {
-	content: "File format: ";
+	content: "File Format: ";
 	font-weight:bold; 
 }
 
 medium:before {
-	content: "Spatial format: ";
+	content: "Spatial Format: ";
 	font-weight:bold; 
 }
 
@@ -113,18 +113,18 @@ isPartOf:before {
 }
 
 coverage:first-of-type:before {
-	content: "Geographic coverage: \A";
+	content: "Geographic Coverage: \A";
 	white-space: pre;
 	font-weight:bold;
 }
 
 spatial:before {
-	content: "Spatial coverage (bounding box): ";
+	content: "Spatial Coverage (Bounding Box): ";
 	font-weight:bold; 
 }
 
 temporal:before {
-	content: "Temporal coverage: ";
+	content: "Temporal Coverage: ";
 	font-weight:bold; 
 }
 
@@ -144,6 +144,6 @@ provenance:before {
 }
 
 accrualperiodicity:before {
-	content: "Update frequency: ";
+	content: "Update Frequency: ";
 	font-weight:bold; 
 }

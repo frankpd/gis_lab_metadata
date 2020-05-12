@@ -1,0 +1,1 @@
+The files in this directory are copies of files with different names, i.e. each file contains the same information as the original but has a different file name. They are intermediary parts of a process and are NOT the final products. 
