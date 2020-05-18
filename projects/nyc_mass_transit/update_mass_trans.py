@@ -18,6 +18,7 @@ import update_xml_funcs as upx
 year='2020'
 yearmo='2020-05'
 yearmo_txt='May 2020'
+add_descript=' Please note: data in this May 2020 edition represents reduced, essential service due to the COVID-19 pandemic.'
 
 header1='<?xml version="1.0" encoding="UTF-8"?>'
 header2='<?xml-stylesheet type="text/css" href="http://faculty.baruch.cuny.edu/geoportal/metadata/bcgis_dcxml.css"?>'
@@ -49,6 +50,8 @@ for file in os.listdir(infolder):
         # To swap out identifier filename element with new name
         shapefile=file[:-4]+'.shp' 
         upx.einstance(root,'identifier', shapefile,'http')
+        # Append note about COVID service to description
+        upx.eappend(root,'description',add_descript)
         # There were no contributors in May 2020
         upx.eremove_replace(root,'contributor',[],'publisher')
         print(ET.tostring(root, encoding='utf8').decode('utf8')+'\n')

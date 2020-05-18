@@ -14,8 +14,13 @@ def esimple(root,elem,value):
 def esubstring(root,elem,oldstring,newstring):
     """Replace a portion (substring) of the value of an element"""
     e=root.find(elem)
-    e.text=e.text.replace(oldstring,newstring)    
+    e.text=e.text.replace(oldstring,newstring)
 
+def eappend(root,elem,newstring):
+    """Append a string to the end of an element"""
+    e=root.find(elem)
+    e.text=e.text+newstring
+    
 def einstance(root,elem,value,toskip):
     """Replace the value of a specific element that
     repeats; skip the element that begins with a particular 
