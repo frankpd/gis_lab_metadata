@@ -13,7 +13,9 @@ import os
 
 # Modify the xmlfolder value to point to the desired path
 schemafile=os.path.join('bcgis_dc_schema.xsd')
-xmlfolder=os.path.join('projects','nyc_mass_transit','newfiles')
+#xmlfolder=os.path.join('projects','nyc_mass_transit','newfiles')
+xmlfolder=os.path.join('projects','irs_exempt_orgs','newfiles')
+
 
 def spatial_check(my_xml):
     xmldict=my_schema.to_dict(my_xml)
